@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  width: 80px;
+  padding: 2px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+button {
+  padding: 5px 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px; /* Add some space between buttons */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+select {
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 4px; /* Adjust padding to make rows smaller */
+  text-align: left;
+  line-height: 1.2; /* Adjust line height to make rows smaller */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.taskSheet {
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.taskSheet.complete {
+  background-color: #e0f7fa;
+  color: #00796b;
+  border: 2px solid #00796b;
+}
+
+.materialForm {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between form groups */
+}
+
+.materialForm .form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.materialForm .form-group label {
+  margin-right: 8px; /* Space between label and input/select */
+}
+
+.materialForm button {
+  margin-left: auto; /* Push the button to the far right */
+}
+
+.confirmationMessage {
+  margin-top: 10px;
+  color: green;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons if needed */
+}
+
+.main-material {
+  background-color: #d4edda; /* Light green background for main materials */
+}
+
+.supporting-material {
+  background-color: transparent; /* No background color */
+}
+
+.supporting-material.level-1 {
+  color: #006400; /* DarkGreen for first level supporting materials */
+  line-height: 1.2; /* Adjust line height */
+}
+
+.supporting-material.level-2 {
+  color: #228B22; /* ForestGreen for second level supporting materials */
+  line-height: 1; /* Adjust line height */
+}
+
+.supporting-material.level-3 {
+  color: #2E8B57; /* SeaGreen for third level supporting materials */
+  line-height: 1; /* Adjust line height */
+}
+
+.supporting-material.level-4 {
+  color: #556B2F; /* DarkOliveGreen for fourth level supporting materials */
+  line-height: 0.5; /* Adjust line height */
+}
+
+.show-supporting-button {
+  background-color: #FFA500; /* Orange color for differentiation */
+}
+
+.show-supporting-button:hover {
+  background-color: #FF8C00; /* Darker orange on hover */
+}
+
+.ready-to-go h3 {
+  color: #FF4500; /* OrangeRed color for "Ready to go!" */
+}

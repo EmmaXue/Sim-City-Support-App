@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimCity Support App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Task Sheets of SimCity</h1>
+
+  <div id="taskSheetsContainer"></div>
+
+  <form id="taskSheetForm">
+    <label for="taskName">Task Name:</label><br>
+    <input type="text" id="taskName" name="taskName" placeholder="Enter task name" required><br><br>
+    <button type="submit">Create Task Sheet</button>
+  </form>
+
+  <script src="materialTable.js"></script>
+  <script src="api.js"></script>
+  <script src="material.js"></script>
+  <script src="taskSheet.js"></script>
+  <script src="taskSheetHelpers.js"></script>
+  <script src="materialManagement.js"></script>
+  <script src="taskSheetStatus.js"></script>
+  <script src="taskSheetButtons.js"></script>
+  <!-- <script src="countdownTimer.js"></script> -->
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetchTaskSheets().then(data => {
+        data.forEach((taskSheet, index) => {
+          createTaskSheet(taskSheet.taskName, taskSheet.materials, true, taskSheet.taskId);
+        });
+        renumberTaskSheets();
+      });
+
+      document.getElementById('taskSheetForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var taskName = document.getElementById('taskName').value;
+        createTaskSheet(taskName);
+        document.getElementById('taskSheetForm').reset();
+        
+        addTaskSheet({ taskName: taskName, materials: [] }).then(() => {
+          renumberTaskSheets();
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
