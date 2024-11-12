@@ -115,7 +115,7 @@ app.get('/materials-summary', (req, res) => {
     "Fast Food Restaurant": new Set(["biscuit", "pizza", "burger", "fries", "pink soda", "popcorn"]),
     "Donut Shop": new Set(["donut", "smoothie", "bread", "cake", "ice cream", "coffee"]),
     "Farmer's Market": new Set(["vegetables", "flour", "fruit", "cream", "corn", "cheese", "beef"]),
-    "Gardening Supplies": new Set(["glass", "tree", "garden chair", "fire pit", "lawn mover", "gnome"]),
+    "Gardening Supplies": new Set(["grass", "tree", "garden chair", "fire pit", "lawn mover", "gnome"]),
     "Toy Shop": new Set(["toy", "kite", "bear", "game console"]),
     "Sports Shop": new Set(["tennis racket", "soda", "football shoes", "chocolate", "ping-pong table"]),
     "Home Appliances": new Set(["bbq grill", "refrigerator", "bulb", "TV", "microwaver oven"]),
