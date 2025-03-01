@@ -105,7 +105,7 @@ app.listen(port, () => {
 app.get('/materials-summary', (req, res) => {
   const basicMaterials = new Set([
     "metal", "wood", "plastic", "seeds", "minerals", "chemicals", "textiles", "sugar", "glass", 
-    "feed", "electrical", "G fabric", "coconut", "cc oil"
+    "feed", "electrical", "G fabric", "coconut", "cc oil", "silk"
   ]);
   const factories = {
     "Building Supplies Store": new Set(["nail", "plank", "brick", "cement", "glue", "paint"]),
@@ -123,6 +123,7 @@ app.get('/materials-summary', (req, res) => {
     "Tropical Products Store": new Set(["coco oil", "coco cream", "coco milk"]),
     "Car Parts": new Set(["motor oil", "tire", "engine"]),
     "Railway Shop": new Set(["Train Shop Pickaxe", "Train Shop Light", "Train Shop Bolt", "Train Shop Hat"]),
+    "Silk Store": new Set(["string", "fan", "robe"]),
     "Others": new Set()
   };
 
