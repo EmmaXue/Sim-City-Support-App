@@ -119,6 +119,7 @@ app.get('/materials-summary', (req, res) => {
     "Toy Shop": new Set(["toy", "kite", "bear", "game console"]),
     "Sports Shop": new Set(["tennis racket", "soda", "football shoes", "chocolate", "ping-pong table"]),
     "Home Appliances": new Set(["bbq grill", "refrigerator", "bulb", "TV", "microwaver oven"]),
+    "Bureau of Restoration": new Set(["wrought iron", "carved wood", "chiseled stone", "tapestry"]),
     "Eco Shop": new Set(["G bag", "G slides", "G mat"]),
     "Tropical Products Store": new Set(["coco oil", "coco cream", "coco milk"]),
     "Car Parts": new Set(["motor oil", "tire", "engine"]),
